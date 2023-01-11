@@ -127,3 +127,13 @@ tcp        0      0 0.0.0.0:9999            0.0.0.0:*               LISTEN      
 
 https://ip:9999
 
+## PingFederate COnfiguration file 
+
+```
+[root@ip-172-31-82-223 bin]# pwd
+/opt/pingfederate-11.2.0/pingfederate/bin
+ run.properties
+```
+
+
+
