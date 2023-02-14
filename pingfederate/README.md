@@ -73,7 +73,7 @@ WantedBy=multi-user.target
 
 [Service]
 Type=simple
-User=ping-user
+User=root
 WorkingDirectory=${PF_HOME}
 Environment='JAVA_HOME=${PF_JAVA_HOME}'
 ExecStart=${PF_HOME}/bin/run.sh
@@ -93,13 +93,19 @@ WantedBy=multi-user.target
 
 [Service]
 Type=simple
-User=ping-user
+User=root
 WorkingDirectory=/opt/pingfederate-11.2.0/pingfederate/
 Environment='JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto.x86_64/'
 ExecStart=/opt/pingfederate-11.2.0/pingfederate/bin/run.sh
 ExecStop=/opt/pingfederate-11.2.0/pingfederate/sbin/pingfederate-shutdown.sh
 ```
 
+### Sourcing BashRC
+```
+
+[root@ip-172-31-82-223 linux]# source ~/.bashrc
+
+```
 ### starting service and checking ports 
 
 ```
